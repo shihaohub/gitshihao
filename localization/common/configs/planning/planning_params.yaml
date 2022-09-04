@@ -1,0 +1,72 @@
+behavior:
+  nudge: false
+  junction_nudge_width: 1
+  min_nudge_width: 4.5
+  max_nudge_width: 6
+  keep_same_trajectory_time: 10 # 绕障时，强制保持同一条轨迹时间
+  length_after_nudge: 5 # 绕过障碍物后多少m关闭绕障
+  time_back_to_min_nudge: 10 #变回最小绕障时间
+  unprotectd_turn_check_time: 5
+  distance_to_sidewalk: 2
+  sidewalk_width: 8
+  sidewalk_length: 8
+  sidewalk_check_time: 4
+  lane_change_lateral_safe_distance: 3.5
+  lane_change_longitudinal_safe_distance: 10
+  lane_change_ignore_oncoming_vehicles_velocity_threshold: 0.7
+  lane_change_check_time: 6
+  detour_lateral_safe_distance: 3.5
+  detour_longitudinal_safe_distance: 10
+  detour_ignore_oncoming_vehicles_velocity_threshold: 2.5
+  detour_check_lateral_offset_threshold: 0.6
+  detour_check_time: 3
+  normal_condition_lateral_safe_distance: 4
+  normal_condition_longitudinal_safe_distance: 4
+  normal_condition_ignore_oncoming_vehicles_velocity_threshold: 0.7
+  emergency_stop_area_width: 2.0
+  emergency_stop_area_height: 0.5
+  emergency_stop_grid_count_threshold: 1024
+  emergency_stop_time_count_threshold: 8
+  emergency_speed_down_area_width: 2.4
+  emergency_speed_down_area_height: 1.0
+  emergency_speed_down_grid_count_threshold: 800
+  protect_area_width: 2.0
+  protect_area_height: 1.0
+  obstacle_tracking_frame_threshold: 3
+  invalid_localization_pos_diff_threshold: 0.4
+  stop_interval: 5 # 绕障前观察时间
+  t_waiting: 10
+  trigger_next_task_distance: 0.5 # 距离任务点X米触发下一个任务点
+  check_car_ahead_of_task_dist: 10 # 距离任务点X米内，可判断车辆是否已经越过任务点
+  dist_near_passager: 1 # 大于trigger_next_task_distance
+  dist_unprotected_inside: 2  # 大于trigger_next_task_distance
+  dist_to_intersection: 10
+  dist_picking: 10
+  picking_speed: 4
+  emergency_distance_to_stop: 4
+  trigger_distacne_to_unprotected: 4
+  max_distance_away_from_path: 2
+  lat_safe_distance_cone: 0.3
+  lon_safe_distance_cone: 4.0
+  lat_safe_distance_dynamic_obstacle: 0.5
+  lon_safe_distance_dynamic_obstacle: 4.0
+  predict_coeff_dynamic_obstacle: 1.5
+  lat_safe_distance_pedestrian: 0.5
+  lon_safe_distance_pedestrian: 4.0
+  predict_coeff_dynamic_pedestrian: 0.5
+  lat_safe_distance_static_obstacle: 0.35
+  lon_safe_distance_static_obstacle: 4.0
+  expect_speed_forward_dist: 15.0
+  unprotected_turn_lat_safe_distance: 0.3
+
+speed:
+  desire_speed_lane: 17
+  desire_speed_lane_change: 17
+  desire_speed_intersection: 6
+  desire_speed_intersection_straight: 6
+  desire_speed_slow_down: 7
+  accelerate_up: 0.45
+  accelerate_down: 0.5
+  maximum_speed: 17
+  desire_speed_uturn: 5
+  desire_speed_sidewalk: 5

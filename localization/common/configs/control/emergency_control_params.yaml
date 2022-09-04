@@ -1,0 +1,7 @@
+extended_width: 0.1 # 车身向外扩展的半宽度，用于安全冗余 (单位: m)
+extended_length: 0.0 # 车身向外扩展的半长度，用于安全冗余(由于会向前预测，一般直接设为0)(单位: m)
+prediction_time: 1.5 # 预测时间长度，用于生成避碰区域 (单位:s)
+time_step: 0.05 # 预测的时间步长，决定生成避碰区域的密度 (单位:s)
+judge_threshold: 5 # 用于判断单次紧急制动的跳变点阈值，在避碰区域内超过这个数值会累加制动计数器 
+continuous_detection_threshold: 3 # 触发紧急制动的连续检测次数阈值
+pub_to_control: false #测试开关，刚开始测试时，设为false，不会直接作用到控制器；测试稳定后，设为true，将结果下发到控制端

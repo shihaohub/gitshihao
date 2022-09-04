@@ -1,0 +1,20 @@
+region: chongqing # LiuZhou QingDao
+route: CQ_05 # HX1819 HX20 HX29 QD01 QD02 BJ10 BJ12 BJ13
+vehicle:
+  number: 14
+  model: E300 # E50 E100 E300 E300Plus
+  size:
+    width: 1.647
+    length: 2.625
+    height: 1.588
+    wheel_base: 2.02
+    rear_to_back: 0.44
+    trailer_length: 4.0
+  wheel_max: 4800.0
+  wheel_zero: 100.0
+  turning_radius: 6.0
+hardware:
+  lidar: Mid70 # Mid70 Mid100
+  imu: Asensing # Asensing Xsense
+  gps: Asensing # Asensing Unistrong
+  can: LCminiPCIe-432
