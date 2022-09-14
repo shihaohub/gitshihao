@@ -12,7 +12,7 @@
 
 #include "mrpt_icp_matching.h"
 
-namespace localization {
+//namespace localization {
 
     GridMapMatching::GridMapMatching() {
         icp_.options.maxIterations = 25;
